@@ -1,5 +1,4 @@
 {
-	"private": true,
 	"name": "@fen95/js-module-template",
 	"version": "1.0.0",
 	"description": "A project template for authoring and publishing JavaScript libraries",
