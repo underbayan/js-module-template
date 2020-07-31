@@ -1,0 +1,15 @@
+{
+	"parserOptions": {},
+	"parser": "babel-eslint",
+	"extends": ["airbnb-base", "prettier"],
+	"rules": {
+		"babel/new-cap": 0,
+		"babel/camelcase": 0,
+		"babel/no-invalid-this": 0,
+		"babel/object-curly-spacing": 0,
+		"babel/quotes": 0,
+		"babel/semi": 0,
+		"babel/no-unused-expressions": 0,
+		"babel/valid-typeof": 0
+	}
+}
