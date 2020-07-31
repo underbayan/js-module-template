@@ -1,14 +1,13 @@
 {
 	"private": true,
 	"name": "@fen95/js-module-template",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "A project template for authoring and publishing JavaScript libraries",
 	"homepage": "",
 	"repository": "",
 	"license": "MIT",
 	"keywords": [],
 	"main": "dist/index.js",
-	"type": "module",
 	"babel": {
 		"presets": [
 			[
