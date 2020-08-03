@@ -7,34 +7,6 @@
 	"license": "MIT",
 	"keywords": [],
 	"main": "dist/index.js",
-	"babel": {
-		"presets": [
-			[
-				"@babel/preset-env",
-				{
-					"modules": false,
-					"targets": {
-						"node": "current"
-					}
-				}
-			]
-		],
-		"plugins": [
-			[
-				"@babel/plugin-proposal-decorators",
-				{
-					"decoratorsBeforeExport": true
-				}
-			],
-			[
-				"@babel/plugin-proposal-class-properties",
-				{
-					"loose": true
-				}
-			],
-			"@babel/plugin-proposal-optional-chaining"
-		]
-	},
 	"dependencies": {
 		"@babel/polyfill": "^7.10.4",
 		"@babel/runtime": "^7.11.0",
@@ -65,29 +37,6 @@
 		"prettier": "~2.0.5",
 		"rimraf": "^3.0.2",
 		"semantic-release": "^17.1.1"
-	},
-	"release": {
-		"plugins": [
-			"@semantic-release/commit-analyzer",
-			"@semantic-release/release-notes-generator",
-			"@semantic-release/changelog",
-			"@semantic-release/npm",
-			"@semantic-release/git"
-		],
-		"branches": [
-			"master",
-			"next",
-			{
-				"name": "beta",
-				"channel": "channel-beta",
-				"prerelease": true
-			},
-			{
-				"name": "alpha",
-				"channel": "channel-alpha",
-				"prerelease": true
-			}
-		]
 	},
 	"files": [
 		"dist",
