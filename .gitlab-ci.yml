@@ -14,6 +14,7 @@ test_task:
     artifacts:
         paths:
             - coverage/
+    coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
     allow_failure: false
 package_task:
     retry: 1
