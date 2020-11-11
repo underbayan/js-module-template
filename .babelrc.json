@@ -3,7 +3,6 @@
         [
             "@babel/preset-env",
             {
-                "modules": false,
                 "targets": {
                     "node": "current"
                 }
@@ -11,6 +10,9 @@
         ]
     ],
     "plugins": [
+        [
+            "@babel/plugin-transform-runtime"
+        ],
         [
             "@babel/plugin-proposal-decorators",
             {

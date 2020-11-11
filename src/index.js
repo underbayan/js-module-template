@@ -1,24 +1,7 @@
-import Greeting from './Greeting';
+import Aux from './aux'
 
-function enumerable(value) {
-	return (target, key, descriptor) => {
-		// eslint-disable-next-line
-		descriptor.enumerable = value;
-		return descriptor;
-	};
+console.log('Run the code directly')
+export class A {
+	static ins = new Aux()
 }
-class A {
-	static p = 12;
-
-	static testStatic = () => {
-		return 'null';
-	};
-
-	// @enumerable(true)
-	test() {
-		this.obj = {};
-		return this.obj?.props?.name;
-	}
-}
-export { A, enumerable };
-export default Greeting;
+export default Aux
